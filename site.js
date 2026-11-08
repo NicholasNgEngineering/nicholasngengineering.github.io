@@ -1,4 +1,43 @@
 const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav-links');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close':'Menu'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu'}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu'}})}
+
+const projectSidebar = document.querySelector('.case-aside');
+if (projectSidebar) {
+  const sections = Array.from(projectSidebar.querySelectorAll('a[href^="#"]'), link => ({
+    link,
+    section: document.getElementById(link.hash.slice(1))
+  })).filter(({ section }) => section);
+
+  // The reading line sits just below the page's anchor scroll offset.
+  const readingLine = 140;
+  let activeLink;
+  let pending = false;
+
+  function updateCurrentSection() {
+    pending = false;
+    let nextLink;
+    for (const { link, section } of sections) {
+      if (section.getBoundingClientRect().top > readingLine) break;
+      nextLink = link;
+    }
+    if (activeLink === nextLink) return;
+    activeLink?.removeAttribute('aria-current');
+    nextLink?.setAttribute('aria-current', 'location');
+    activeLink = nextLink;
+  }
+
+  function scheduleSectionUpdate() {
+    if (pending) return;
+    pending = true;
+    window.requestAnimationFrame(updateCurrentSection);
+  }
+
+  window.addEventListener('scroll', scheduleSectionUpdate, { passive: true });
+  window.addEventListener('resize', scheduleSectionUpdate);
+  window.addEventListener('hashchange', scheduleSectionUpdate);
+  window.addEventListener('pageshow', scheduleSectionUpdate);
+  scheduleSectionUpdate();
+}
+
 const modal=document.querySelector('#image-viewer');if(modal){const img=modal.querySelector('img'),caption=modal.querySelector('.modal-caption');document.querySelectorAll('[data-image]').forEach(button=>button.addEventListener('click',()=>{img.src=button.dataset.image;img.alt=button.dataset.caption;caption.textContent=button.dataset.caption;modal.showModal()}));modal.querySelector('.modal-close').addEventListener('click',()=>modal.close());modal.addEventListener('click',e=>{if(e.target===modal)modal.close()})}
 
 document.querySelectorAll('[data-slide-step]').forEach(button=>button.addEventListener('click',()=>{const deck=button.closest('.case-section').querySelector('.slide-deck');deck.scrollBy({left:Number(button.dataset.slideStep)*(deck.clientWidth+20),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})}));
