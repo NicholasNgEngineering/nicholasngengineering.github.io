@@ -1,0 +1,164 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Steel garage in Revit | Nicholas Ng</title><meta name="description" content="I modelled a 6 × 9 m steel garage in Revit, coordinating the pitched frame, bracing and bolted connections around a clear parking bay and side entrance."><meta name="theme-color" content="#21342c"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/styles.css"><script src="/site.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header class="wrap"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-icon" aria-hidden="true">NN</span><span>NICHOLAS NG<small>ENGINEERING PORTFOLIO</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navigation-links">Menu</button><div class="nav-links" id="navigation-links"><a href="/#work" aria-current="page">Selected work</a><a href="/about/" >About</a><a href="/resume/" >Resume</a><a class="nav-contact" href="mailto:nicholas.ngwork@outlook.com?subject=Portfolio%20enquiry" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">Get in touch ↗</a></div></nav></header><main id="main"><div class="wrap garage-case">
+      <header class="page-intro">
+        <div class="breadcrumb"><a href="/#work">← Selected work</a> / 2026</div>
+        <div class="eyebrow">BIM & structural modelling</div>
+        <h1>Steel garage in Revit</h1>
+        <p class="lede">I modelled a 6 × 9 m steel garage in Revit, coordinating the pitched frame, bracing and bolted connections around a clear parking bay and side entrance.</p>
+        <dl class="project-facts">
+          <div><dt>My role</dt><dd>Revit modelling and detailing</dd></div>
+          <div><dt>Footprint</dt><dd>6 × 9 m</dd></div>
+          <div><dt>Layout</dt><dd>3 frames at 4.5 m centres</dd></div>
+          <div><dt>Roof pitch</dt><dd>18.4°</dd></div>
+        </dl>
+      </header>
+      <div class="project-visual garage-exterior"><button type="button" data-image="/assets/garage-exterior-front-right.webp" data-caption="The completed Revit model with a terracotta steel roof, side entrance and driveway approach." aria-label="Enlarge the garage exterior"><img src="/assets/garage-exterior-front-right.webp" width="2048" height="1142" alt="Steel garage with a terracotta roof, sandstone-coloured walls and a driveway"></button></div>
+      <p class="caption">The completed Revit model with a terracotta steel roof, side entrance and driveway approach.</p>
+      <div class="case-body">
+        <aside class="case-aside">
+          <div class="eyebrow">HOW I BUILT IT</div>
+          <a href="#decisions">01 / Set out the frame</a>
+          <a href="#roof">02 / Set the roof pitch</a>
+          <a href="#challenges">03 / Resolve the joints</a>
+          <a href="#bracing">04 / Coordinate bracing and access</a>
+          <a href="#outcome">05 / See the finished model</a>
+        </aside>
+        <div class="case-content">
+          <section class="case-section" id="decisions">
+            <div class="eyebrow">01 / Grid and frame layout</div>
+            <h2>Keep the parking space clear</h2>
+            <div id="contribution">
+              <p>I started with a 6 × 9 m grid. Three pitched frames spanned the 6 m width, with columns along the side walls and two 4.5 m bays along the length. That gave me a clear parking space and a repeated frame to detail.</p>
+            </div>
+            <div class="garage-study">
+              <h3>What would a fourth frame change?</h3>
+              <p>I compared the modelled grid with an evenly spaced four-frame option. A fourth frame shortens the distance between frames by 1.5 m, but adds two column and footing positions and another set of eaves and ridge joints.</p>
+              <div class="garage-options">
+                <div class="garage-option">
+                  <span class="tag">Modelled layout</span><h4>Three frames</h4>
+                  <svg class="garage-plan" viewBox="0 0 268 198" role="img" aria-label="Three frames at 4.5 metres. All columns are on the two side walls.">
+      <rect x="46" y="37" width="180" height="120" class="garage-plan-bounds"/>
+      <g class="garage-plan-frames"><path d="M46 37V157"/><circle cx="46" cy="37" r="4.5"/><circle cx="46" cy="157" r="4.5"/><path d="M136 37V157"/><circle cx="136" cy="37" r="4.5"/><circle cx="136" cy="157" r="4.5"/><path d="M226 37V157"/><circle cx="226" cy="37" r="4.5"/><circle cx="226" cy="157" r="4.5"/></g>
+      <text x="136" y="25" text-anchor="middle">9 m length</text>
+      <text x="24" y="97" text-anchor="middle" transform="rotate(-90 24 97)">6 m span</text>
+      <text x="136" y="181" text-anchor="middle">4.5 m between frames</text>
+    </svg>
+                  <p>2 bays · 6 columns · 6 pads</p>
+                </div>
+                <div class="garage-option">
+                  <span class="tag">Concept comparison</span><h4>Four frames</h4>
+                  <svg class="garage-plan" viewBox="0 0 268 198" role="img" aria-label="Four frames at 3 metres. All columns are on the two side walls.">
+      <rect x="46" y="37" width="180" height="120" class="garage-plan-bounds"/>
+      <g class="garage-plan-frames"><path d="M46 37V157"/><circle cx="46" cy="37" r="4.5"/><circle cx="46" cy="157" r="4.5"/><path d="M106 37V157"/><circle cx="106" cy="37" r="4.5"/><circle cx="106" cy="157" r="4.5"/><path d="M166 37V157"/><circle cx="166" cy="37" r="4.5"/><circle cx="166" cy="157" r="4.5"/><path d="M226 37V157"/><circle cx="226" cy="37" r="4.5"/><circle cx="226" cy="157" r="4.5"/></g>
+      <text x="136" y="25" text-anchor="middle">9 m length</text>
+      <text x="24" y="97" text-anchor="middle" transform="rotate(-90 24 97)">6 m span</text>
+      <text x="136" y="181" text-anchor="middle">3 m between frames</text>
+    </svg>
+                  <p>3 bays · 8 columns · 8 pads</p>
+                </div>
+              </div>
+              <p>I’d keep three frames for this concept. Both layouts leave the parking space clear. The three-frame grid leaves longer side-wall bays to work with when placing the door and bracing, with fewer joints to detail.</p>
+            </div>
+          </section>
+
+          <section class="case-section" id="roof">
+            <div class="eyebrow">02 / Roof geometry</div>
+            <h2>Give the rafters and roof one pitch</h2>
+            <p>I set the eaves at 3 m and the ridge at 4 m. A 1 m rise over a 3 m half-span gives a pitch of 18.4° (arctan of 1 ÷ 3). I used that same pitch for the rafters and roof footprint so the two followed the same geometry.</p>
+            <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-early-frame.webp" data-caption="The pitched rafters and columns on the Revit grid, before the roof covering and connection detailing." aria-label="Enlarge Early frame model"><img src="/assets/garage-early-frame.webp" alt="The pitched rafters and columns on the Revit grid, before the roof covering and connection detailing." loading="lazy"></button>
+      <figcaption><strong>Early frame model</strong>The pitched rafters and columns on the Revit grid, before the roof covering and connection detailing.</figcaption>
+    </figure>
+          </section>
+
+          <section class="case-section" id="challenges">
+            <div class="eyebrow">03 / Steel connections</div>
+            <h2>Work out why the joints didn’t fit</h2>
+            <h3>The eaves connection wouldn’t generate</h3>
+            <p>I checked the rafter offsets first, then looked at the column in plan. Its web was rotated 90° relative to the rafter web. I rotated one column, checked that Revit generated the plates and bolts, then repeated the detail.</p>
+            <div class="garage-pair">
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-column-plan.webp" data-caption="The column web runs vertically in this view. The portal frame runs left to right." aria-label="Enlarge Diagnosis in plan"><img src="/assets/garage-column-plan.webp" alt="The column web runs vertically in this view. The portal frame runs left to right." loading="lazy"></button>
+      <figcaption><strong>Diagnosis in plan</strong>The column web runs vertically in this view. The portal frame runs left to right.</figcaption>
+    </figure>
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-knee-detail.webp" data-caption="The end plate, bolts and haunch appear at the eaves after the column is reoriented." aria-label="Enlarge Bolted knee connection"><img src="/assets/garage-knee-detail.webp" alt="The end plate, bolts and haunch appear at the eaves after the column is reoriented." loading="lazy"></button>
+      <figcaption><strong>Bolted knee connection</strong>The end plate, bolts and haunch appear at the eaves after the column is reoriented.</figcaption>
+    </figure>
+            </div>
+            <h3>The rafters met with a step at the ridge</h3>
+            <p>I inspected how Revit trimmed the rafter ends at the join. I then modelled a bolted apex connection so I could see how the rafters, end plates and bolts fit together.</p>
+            <div class="garage-pair">
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-ridge-before.png" data-caption="The rafter ends meet unevenly at the centre gridline." aria-label="Enlarge Before detailing"><img src="/assets/garage-ridge-before.png" alt="The rafter ends meet unevenly at the centre gridline." loading="lazy"></button>
+      <figcaption><strong>Before detailing</strong>The rafter ends meet unevenly at the centre gridline.</figcaption>
+    </figure>
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-apex-connection.png" data-caption="The detailed ridge with the haunch, end plates and bolts visible." aria-label="Enlarge Modelled apex connection"><img src="/assets/garage-apex-connection.png" alt="The detailed ridge with the haunch, end plates and bolts visible." loading="lazy"></button>
+      <figcaption><strong>Modelled apex connection</strong>The detailed ridge with the haunch, end plates and bolts visible.</figcaption>
+    </figure>
+            </div>
+          </section>
+
+          <section class="case-section" id="bracing">
+            <div class="eyebrow">04 / Bracing and access</div>
+            <h2>Leave room for the side door</h2>
+            <p>A wall diagonal in the front bay would interfere with the side entrance. I left that bay clear on the door side and used the adjacent bay for the wall diagonal. I hid the roof covering to inspect where the roof and wall braces met the frame.</p>
+            <div id="gallery">
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-side-door-bracing.webp" data-caption="A roof-off Revit view showing the side door in the front bay and the roof diagonals above." aria-label="Enlarge Side entrance and roof framing"><img src="/assets/garage-side-door-bracing.webp" alt="A roof-off Revit view showing the side door in the front bay and the roof diagonals above." loading="lazy"></button>
+      <figcaption><strong>Side entrance and roof framing</strong>A roof-off Revit view showing the side door in the front bay and the roof diagonals above.</figcaption>
+    </figure>
+            </div>
+            <div class="garage-study">
+              <h3>Trace the intended wind load path</h3>
+              <p>For wind acting along the garage, I traced an intended route through the roof diagonal, eaves junction and wall diagonal to the column base and footing. The points to check next are the connections at each transfer and how the bracing would behave with wind from the opposite direction.</p>
+              <figure class="garage-wind">
+      <svg viewBox="0 0 1350 900" role="img" aria-labelledby="garage-wind-title">
+        <title id="garage-wind-title">Conceptual load path from the roof bracing through the eaves joint and wall diagonal to a pad footing</title>
+        <image href="/assets/garage-frame-and-slab.webp" width="1350" height="900"/>
+        <defs><marker id="garage-wind-arrow" markerUnits="userSpaceOnUse" markerWidth="38" markerHeight="36" refX="5" refY="3" viewBox="0 0 6 6" orient="auto"><path d="M0 0 6 3 0 6Z" fill="#215c47"/></marker></defs>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M730 241 1146 272 M1153 295 924 583 M911 620 911 650" stroke="#fff" stroke-width="24"/>
+          <g stroke="#215c47" stroke-width="13" marker-end="url(#garage-wind-arrow)">
+            <path d="M730 241 1146 272"/><path d="M1153 295 924 583"/><path d="M911 620 911 650"/>
+          </g>
+        </g>
+        <g class="garage-wind-numbers">
+          <circle cx="875" cy="207" r="25"/><text x="875" y="207">1</text>
+          <circle cx="1214" cy="244" r="25"/><text x="1214" y="244">2</text>
+          <circle cx="1093" cy="450" r="25"/><text x="1093" y="450">3</text>
+          <circle cx="970" cy="667" r="25"/><text x="970" y="667">4</text>
+        </g>
+      </svg>
+      <figcaption>One side of the model, annotated to show the intended transfer of wind forces along the garage.</figcaption>
+      <ol class="garage-wind-key"><li>Roof diagonal</li><li>Eaves junction</li><li>Wall diagonal</li><li>Column base and footing</li></ol>
+    </figure>
+              <p class="garage-reference"><a href="https://www.steelconstruction.info/images/c/c5/SCI_P397.pdf">SCI P397, section 8 on portal frame bracing ↗</a></p>
+            </div>
+          </section>
+
+          <section class="case-section" id="outcome">
+            <div class="eyebrow">05 / Finished model</div>
+            <h2>From the first grid to the final model</h2>
+            <p>I brought the exterior and roof framing together on one Revit sheet. Using the same viewpoint makes it easy to see where the bracing, steel frame and footings sit behind the finished garage.</p>
+            <div class="garage-pair garage-sheet" role="group" aria-label="Drawing views from Revit sheet C102">
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-c102-exterior.webp" data-caption="The roof, roller door and side entrance in the finished model." aria-label="Enlarge Exterior"><img src="/assets/garage-c102-exterior.webp" alt="The roof, roller door and side entrance in the finished model." loading="lazy"></button>
+      <figcaption><strong>Exterior</strong>The roof, roller door and side entrance in the finished model.</figcaption>
+    </figure>
+              <figure class="garage-figure">
+      <button type="button" data-image="/assets/garage-c102-framing.webp" data-caption="The same garage with the roof covering hidden to reveal the framing." aria-label="Enlarge Roof framing"><img src="/assets/garage-c102-framing.webp" alt="The same garage with the roof covering hidden to reveal the framing." loading="lazy"></button>
+      <figcaption><strong>Roof framing</strong>The same garage with the roof covering hidden to reveal the framing.</figcaption>
+    </figure>
+            </div>
+            <p class="caption">Exterior and roof framing views from sheet C102, Garage Overview. Select either view to enlarge it.</p>
+            <div class="garage-study garage-takeaway">
+              <h3>What I took from the project</h3>
+              <p>I learnt to check a decision from more than one view before carrying it through the model. The plan exposed the rotated column that stopped the eaves connection from generating. Hiding the roof let me check the brace locations against the side entrance.</p>
+            </div>
+            <p class="garage-scope">Independent Revit concept model. Structural sizing and connection capacity would require verification before construction.</p>
+          </section>
+        </div>
+      </div><dialog class="modal" id="image-viewer" aria-label="Project image viewer"><div class="modal-bar"><span class="modal-caption"></span><button class="modal-close" type="button" aria-label="Close image viewer">Close ×</button></div><img alt=""></dialog>
+      <div class="next-project"><a href="/projects/randwick/"><span>Explore another project</span><h2>Randwick Defence Land</h2></a><a href="/projects/randwick/" aria-label="Next project: Randwick Defence Land">→</a></div>
+    </div></main><section class="contact-band" id="contact"><div class="wrap contact-inner"><div><div class="eyebrow">GET IN TOUCH</div><p>I’m interested in opportunities to learn alongside engineering and project management teams.</p></div><a class="button" href="mailto:nicholas.ngwork@outlook.com?subject=Portfolio%20enquiry" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">Say hello <span aria-hidden="true">↗</span></a></div></section><footer class="wrap footer"><span>© 2026 Nicholas Ng · Sydney, Australia</span><div class="footer-links"><a href="https://www.linkedin.com/in/nicholasng39a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="/resume/">Resume ↗</a><a href="mailto:nicholas.ngwork@outlook.com?subject=Portfolio%20enquiry" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">Email ↗</a></div></footer><dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title"><div class="contact-dialog-top"><h2 id="contact-dialog-title">Email Nicholas</h2><button class="contact-close" type="button" aria-label="Close contact options">Close ×</button></div><p>Choose where to write your email.</p><div class="contact-email-row"><input id="contact-email" type="text" value="nicholas.ngwork@outlook.com" readonly aria-label="Nicholas’s email address"><button type="button" class="button" data-copy-email>Copy email</button></div><div class="contact-provider-links"><a class="button primary" href="https://outlook.live.com/mail/0/deeplink/compose?to=nicholas.ngwork%40outlook.com&amp;subject=Portfolio%20enquiry" target="_blank" rel="noopener noreferrer">Open Outlook ↗</a><a class="button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nicholas.ngwork%40outlook.com&amp;su=Portfolio%20enquiry" target="_blank" rel="noopener noreferrer">Open Gmail ↗</a></div><a class="contact-default-mail" href="mailto:nicholas.ngwork@outlook.com?subject=Portfolio%20enquiry">Use my default email app ↗</a><p class="contact-copy-status" role="status" aria-live="polite"></p></dialog></body></html>
