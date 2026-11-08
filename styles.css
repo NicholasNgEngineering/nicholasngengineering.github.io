@@ -94,3 +94,10 @@
 .sumobot-views figcaption{display:grid;gap:3px;margin-top:10px;font-size:12px;line-height:1.5;color:var(--muted)}
 .sumobot-views figcaption strong{font-size:13px;color:var(--ink)}
 @media(max-width:700px){.sumobot-views{grid-template-columns:1fr;gap:20px}}
+
+/* Sumobot front-end concepts */
+.sumobot-concepts{margin:26px 0}
+.sumobot-concept h3{margin:0 0 10px}
+.sumobot-concept-view img{width:168%;left:-34%;top:50%;transform:translateY(-50%)}
+.sumobot-concept-plan{display:block;width:min(100%,190px);height:auto;margin:12px auto}
+.sumobot-concept p,.sumobot-wedge-choice p{margin-bottom:0}
