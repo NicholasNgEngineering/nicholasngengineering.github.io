@@ -96,8 +96,10 @@
 @media(max-width:700px){.sumobot-views{grid-template-columns:1fr;gap:20px}}
 
 /* Sumobot front-end concepts */
-.sumobot-concepts{margin:26px 0}
-.sumobot-concept h3{margin:0 0 10px}
-.sumobot-concept-view img{width:168%;left:-34%;top:50%;transform:translateY(-50%)}
-.sumobot-concept-plan{display:block;width:min(100%,190px);height:auto;margin:12px auto}
-.sumobot-concept p,.sumobot-wedge-choice p{margin-bottom:0}
+.sumobot-concepts{grid-template-columns:repeat(3,minmax(0,1fr));margin:26px 0 0}
+.sumobot-concept h3{margin:0 0 10px;font-size:17px}
+.sumobot-concept-view img{width:155%;left:-27.5%;top:50%;transform:translateY(-50%);clip-path:inset(0 20%)}
+.sumobot-concept-wedge img{inset:0;width:100%}
+.sumobot-concepts figcaption{margin-top:8px}
+.sumobot-concept p{margin:10px 0 0}
+@media(max-width:900px){.sumobot-concepts{grid-template-columns:1fr;gap:24px}}
