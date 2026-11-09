@@ -18,39 +18,16 @@
       <p class="caption">The completed Revit model with a terracotta steel roof, side entrance and driveway approach.</p>
       <div class="case-body">
         <aside class="case-aside">
-          <div class="eyebrow">PROJECT PROCESS</div>
-          <a href="#research">01 / Research before modelling</a>
-          <a href="#decisions">02 / Set out the frame</a>
-          <a href="#roof">03 / Set the roof pitch</a>
-          <a href="#challenges">04 / Resolve the joints</a>
-          <a href="#bracing">05 / Coordinate bracing and access</a>
-          <a href="#outcome">06 / See the finished model</a>
+          <div class="eyebrow">HOW I BUILT IT</div>
+          <a href="#decisions">01 / Set out the frame</a>
+          <a href="#roof">02 / Set the roof pitch</a>
+          <a href="#challenges">03 / Resolve the joints</a>
+          <a href="#bracing">04 / Coordinate bracing and access</a>
+          <a href="#outcome">05 / See the finished model</a>
         </aside>
         <div class="case-content">
-          <section class="case-section" id="research">
-            <div class="eyebrow">01 / Research</div>
-            <h2>Research before getting started</h2>
-            <p>The brief was a detached 6 × 9 m steel garage with a clear parking bay, a roller door and a side entrance. These references show how to take that brief from a layout sketch to a structural study.</p>
-
-            <h3>Start with a NSW drawing set</h3>
-            <p>The floor plan and section of a detached steel shed in Stratford show how to document the footprint, openings, roof pitch, portal frame and slab. For this concept, the first sketch would show the parking clearance, door openings and frame positions in plan, with the eaves and ridge heights in section.</p>
-            <p class="garage-reference"><a href="https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20AI-1806706%2120250813T062718.763%20GMT">NSW Planning Portal drawing set ↗</a></p>
-
-            <h3>Check the site constraints</h3>
-            <p>For a real NSW lot, the approval pathway, setbacks, height limits and driveway access would inform the layout. For this portfolio concept, those checks would start once a lot is selected.</p>
-            <p class="garage-reference"><a href="https://www.planning.nsw.gov.au/the-planning-system/development-assessment/planning-approval-pathways/development-types/carports-and-garages">NSW Planning guidance on carports and garages ↗</a></p>
-
-            <h3>Follow a worked garage example</h3>
-            <p>The Australian Steel Institute works through the site and wind inputs for a 6 × 6 m double garage in Brisbane. The sequence is a starting point for setting up a structural model in SPACE GASS. The wind inputs would need to be determined for the chosen NSW site.</p>
-            <p class="garage-reference"><a href="https://www.steel.org.au/resources/elibrary/resources/worked-example-for-a-steel-shed,-region-b-bk850/?view=download">ASI worked garage example ↗</a></p>
-
-            <h3>Find the full structural references</h3>
-            <p>The ASI guide <em>Portal Frame Steel Sheds and Garages</em> (ISBN 9781921476389) covers loads, analysis, members, bracing, footings and connections. For a deeper bracing example, see Section 6.11 of <em>Design of Portal Frame Buildings</em>, 4th edition, starting on page 235.</p>
-            <p class="garage-reference"><a href="https://steel.org.au/resources/elibrary/library/design-guide-portal-frame-steel-sheds-and-garages/">ASI shed and garage design guide ↗</a> · <a href="https://steel.org.au/ASI/media/Australian-Steel-Institute/Bookshop%20ToCs/180-Portal-Frames-4ed-contents.pdf">ASI portal frame book contents ↗</a></p>
-          </section>
-
           <section class="case-section" id="decisions">
-            <div class="eyebrow">02 / Grid and frame layout</div>
+            <div class="eyebrow">01 / Grid and frame layout</div>
             <h2>Keep the parking space clear</h2>
             <div id="contribution">
               <p>I started with a 6 × 9 m grid. Three pitched frames spanned the 6 m width, with columns along the side walls and two 4.5 m bays along the length. That gave me a clear parking space and a repeated frame to detail.</p>
@@ -87,7 +64,7 @@
           </section>
 
           <section class="case-section" id="roof">
-            <div class="eyebrow">03 / Roof geometry</div>
+            <div class="eyebrow">02 / Roof geometry</div>
             <h2>Give the rafters and roof one pitch</h2>
             <p>I set the eaves at 3 m and the ridge at 4 m. A 1 m rise over a 3 m half-span gives a pitch of 18.4° (arctan of 1 ÷ 3). I used that same pitch for the rafters and roof footprint so the two followed the same geometry.</p>
             <figure class="garage-figure">
@@ -97,7 +74,7 @@
           </section>
 
           <section class="case-section" id="challenges">
-            <div class="eyebrow">04 / Steel connections</div>
+            <div class="eyebrow">03 / Steel connections</div>
             <h2>Work out why the joints didn’t fit</h2>
             <h3>The eaves connection wouldn’t generate</h3>
             <p>I checked the rafter offsets first, then looked at the column in plan. Its web was rotated 90° relative to the rafter web. I rotated one column, checked that Revit generated the plates and bolts, then repeated the detail.</p>
@@ -126,7 +103,7 @@
           </section>
 
           <section class="case-section" id="bracing">
-            <div class="eyebrow">05 / Bracing and access</div>
+            <div class="eyebrow">04 / Bracing and access</div>
             <h2>Leave room for the side door</h2>
             <p>A wall diagonal in the front bay would interfere with the side entrance. I left that bay clear on the door side and used the adjacent bay for the wall diagonal. I hid the roof covering to inspect where the roof and wall braces met the frame.</p>
             <div id="gallery">
@@ -163,7 +140,7 @@
           </section>
 
           <section class="case-section" id="outcome">
-            <div class="eyebrow">06 / Finished model</div>
+            <div class="eyebrow">05 / Finished model</div>
             <h2>From the first grid to the final model</h2>
             <p>I brought the exterior and roof framing together on one Revit sheet. Using the same viewpoint makes it easy to see where the bracing, steel frame and footings sit behind the finished garage.</p>
             <div class="garage-pair garage-sheet" role="group" aria-label="Drawing views from Revit sheet C102">
