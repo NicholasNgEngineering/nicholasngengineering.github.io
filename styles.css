@@ -50,6 +50,23 @@
 .project-visual.garage-exterior{aspect-ratio:2.05}
 .project-visual.garage-exterior button:focus-visible{outline-offset:-5px}
 .garage-case .page-intro{padding-bottom:18px}
+.garage-title{
+  display:grid;
+  grid-template-areas:"category ." "title icon";
+  grid-template-columns:minmax(0,max-content) 48px;
+  align-items:center;
+  column-gap:clamp(20px,3vw,40px);
+}
+.garage-title .eyebrow{grid-area:category}
+.garage-title h1{grid-area:title}
+.garage-revit-icon{grid-area:icon;width:100%;height:auto}
+@media(max-width:700px){
+  .garage-title{
+    grid-template-areas:"category icon" "title title";
+    grid-template-columns:minmax(0,max-content) 24px;
+    column-gap:10px;
+  }
+}
 .garage-case .project-facts{margin-bottom:12px}
 @media(max-width:700px){.project-visual.garage-exterior{aspect-ratio:1.65}}
 
